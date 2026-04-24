@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+node_modules/
+dist/
+coverage/
+*.log
+backend/.flaskenv
+data/processed/*.parquet
+data/processed/*.json
+data/exports/*
+!data/exports/.gitkeep
+*.db
+*.sqlite3
