@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/
+.DS_Store
+artifacts/
+data/raw/
+data/processed/
+data/external/
+models/
