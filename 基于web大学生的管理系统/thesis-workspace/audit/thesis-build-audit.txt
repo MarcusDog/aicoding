@@ -1,0 +1,6 @@
+Output: C:\Users\lenovo\OneDrive\Desktop\毕业设计_4\基于web大学生的管理系统\thesis-workspace\deliverables\王冠超-基于Web的大学生志愿者管理系统设计与开发-论文终稿.docx
+PDF: C:\Users\lenovo\OneDrive\Desktop\毕业设计_4\基于web大学生的管理系统\thesis-workspace\deliverables\王冠超-基于Web的大学生志愿者管理系统设计与开发-论文终稿.pdf
+Paragraph count: 377
+Table count: 20
+Non-space chars: 21284
+Chinese chars: 12766

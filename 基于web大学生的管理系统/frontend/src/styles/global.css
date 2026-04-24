@@ -1,0 +1,40 @@
+:root {
+  color-scheme: light;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  background: #eef3f8;
+  color: #1f2a37;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 1200px;
+  background:
+    radial-gradient(circle at top left, rgba(29, 111, 169, 0.12), transparent 30%),
+    linear-gradient(180deg, #f4f8fb 0%, #ebf1f6 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-container {
+  padding: 24px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}

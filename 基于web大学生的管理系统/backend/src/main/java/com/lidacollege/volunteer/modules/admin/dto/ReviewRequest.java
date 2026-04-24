@@ -1,0 +1,6 @@
+package com.lidacollege.volunteer.modules.admin.dto;
+
+public record ReviewRequest(
+    String reviewComment
+) {
+}
