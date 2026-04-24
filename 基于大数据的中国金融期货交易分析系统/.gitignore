@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.coverage
+.venv/
+.env
+data/
+logs/
+*.duckdb
+*.parquet
+*.db
+*.sqlite3
+node_modules/
+.streamlit/
+.superpowers/
