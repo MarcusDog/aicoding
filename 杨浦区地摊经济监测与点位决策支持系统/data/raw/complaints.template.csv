@@ -1,0 +1,2 @@
+id,created_at,category,content,address,lon,lat,source
+sample-001,2025-01-05 18:30:00,占道经营,示例投诉文本,上海市杨浦区示例路1号,121.520000,31.290000,replace-with-real-source

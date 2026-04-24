@@ -1,0 +1,10 @@
+.env
+.DS_Store
+.pytest_cache/
+.superpowers/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+tmp_*.html
+~$*.docx

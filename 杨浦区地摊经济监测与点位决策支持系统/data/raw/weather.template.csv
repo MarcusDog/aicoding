@@ -1,0 +1,2 @@
+date,weather_code,weather_text,temp_low,temp_high,source
+2025-01-01,CLOUDY,多云,3,9,replace-with-real-source

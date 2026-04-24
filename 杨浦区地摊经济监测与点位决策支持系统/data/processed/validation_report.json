@@ -1,0 +1,53 @@
+{
+  "overall_status": "ok",
+  "files": {
+    "complaints.csv": {
+      "file": "complaints.csv",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "metadata": {
+        "path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\毕业设计_4\\杨浦区\\data\\raw\\complaints.csv",
+        "exists": true,
+        "size_bytes": 69522,
+        "last_modified": 1773898667.2284088
+      }
+    },
+    "candidate_points.csv": {
+      "file": "candidate_points.csv",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "metadata": {
+        "path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\毕业设计_4\\杨浦区\\data\\raw\\candidate_points.csv",
+        "exists": true,
+        "size_bytes": 5233,
+        "last_modified": 1773897130.085462
+      }
+    },
+    "calendar.csv": {
+      "file": "calendar.csv",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "metadata": {
+        "path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\毕业设计_4\\杨浦区\\data\\raw\\calendar.csv",
+        "exists": true,
+        "size_bytes": 26654,
+        "last_modified": 1773897354.1755486
+      }
+    },
+    "weather.csv": {
+      "file": "weather.csv",
+      "status": "ok",
+      "errors": [],
+      "warnings": [],
+      "metadata": {
+        "path": "C:\\Users\\lenovo\\OneDrive\\Desktop\\毕业设计_4\\杨浦区\\data\\raw\\weather.csv",
+        "exists": true,
+        "size_bytes": 24613,
+        "last_modified": 1773897354.2991138
+      }
+    }
+  }
+}

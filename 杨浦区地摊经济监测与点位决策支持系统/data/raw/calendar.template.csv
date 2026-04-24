@@ -1,0 +1,2 @@
+date,is_holiday,is_weekend,holiday_name,source
+2025-01-01,1,0,元旦,replace-with-official-source

@@ -1,0 +1,16 @@
+{
+  "complaints_cleaning": {
+    "total_rows": 80,
+    "deduplicated_rows": 0,
+    "dropped_short_text_rows": 0,
+    "geocoded_rows": 0,
+    "remaining_rows": 80,
+    "geo_coverage_ratio": 0.95
+  },
+  "feature_rows": 75,
+  "manual_label_summary": {
+    "labeled_rows": 0,
+    "positive_labels": 0,
+    "negative_labels": 0
+  }
+}

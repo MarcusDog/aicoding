@@ -1,0 +1,9 @@
+{
+  "model_source": "rule_baseline_only",
+  "labeled_rows": 0,
+  "accuracy": null,
+  "f1": null,
+  "feature_columns": [],
+  "positive_labels": 0,
+  "negative_labels": 0
+}
