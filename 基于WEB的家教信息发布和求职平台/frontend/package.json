@@ -1,0 +1,14 @@
+{
+  "name": "tutor-platform-frontend",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "../scripts/sync_frontend.sh",
+    "check": "node --check src/api.js && node --check src/helpers.js && node --check src/store.js && node --check src/main.js"
+  },
+  "dependencies": {
+    "vue": "^3.5.32",
+    "vue-router": "^4.6.4"
+  }
+}
