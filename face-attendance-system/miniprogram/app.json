@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/check-in/index",
+    "pages/records/index",
+    "pages/profile/index",
+    "pages/face-register/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "人脸考勤签到",
+    "navigationBarBackgroundColor": "#0f766e",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light"
+  },
+  "networkTimeout": {
+    "request": 12000,
+    "connectSocket": 10000,
+    "uploadFile": 12000,
+    "downloadFile": 12000
+  },
+  "tabBar": {
+    "color": "#64748b",
+    "selectedColor": "#0f766e",
+    "list": [
+      {
+        "pagePath": "pages/check-in/index",
+        "text": "签到"
+      },
+      {
+        "pagePath": "pages/records/index",
+        "text": "记录"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取你的位置用于考勤签到"
+    }
+  },
+  "usingComponents": {}
+}

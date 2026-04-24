@@ -1,0 +1,7 @@
+<view class="card">
+  <view class="tips">{{tips}}</view>
+  <camera id="camera" device-position="front" flash="auto" class="camera"></camera>
+  <button type="primary" bindtap="registerFace" loading="{{loading}}" disabled="{{loading}}">
+    拍照并注册
+  </button>
+</view>

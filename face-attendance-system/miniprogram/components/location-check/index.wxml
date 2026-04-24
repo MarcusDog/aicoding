@@ -1,0 +1,1 @@
+<view class="box">当前位置：{{text}}</view>

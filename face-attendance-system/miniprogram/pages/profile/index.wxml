@@ -1,0 +1,19 @@
+<view class="card">
+  <view class="name">{{profile.name || "未登录用户"}}</view>
+  <view>工号：{{profile.employee_no || "-"}}</view>
+  <view>部门：{{profile.department || "-"}}</view>
+  <view>人脸状态：{{profile.is_face_registered ? "已注册" : "未注册"}}</view>
+</view>
+
+<view class="card">
+  <button type="primary" bindtap="goRegister">人脸注册</button>
+  <button bindtap="reload" style="margin-top: 20rpx">刷新资料</button>
+  <button bindtap="relogin" style="margin-top: 20rpx">重新登录</button>
+</view>
+
+<view class="card">
+  <view class="label">运行环境：{{env}}</view>
+  <picker mode="selector" range="{{envOptions}}" bindchange="onEnvChange">
+    <view class="env-switch">切换环境（dev/test/prod）</view>
+  </picker>
+</view>

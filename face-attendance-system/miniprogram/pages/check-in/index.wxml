@@ -1,0 +1,19 @@
+<view class="card">
+  <view class="title">人脸签到</view>
+  <view class="line">当前位置：{{locationText}}</view>
+  <view class="line">
+    规则 ID（可选）：
+    <input class="input" type="number" value="{{ruleId}}" bindinput="onRuleInput" placeholder="留空使用默认规则" />
+  </view>
+</view>
+
+<view class="card">
+  <camera id="camera" device-position="front" flash="auto" class="camera"></camera>
+  <button type="primary" bindtap="doCheckIn" loading="{{loading}}" disabled="{{!ready || loading}}">
+    拍照并签到
+  </button>
+</view>
+
+<view class="card" wx:if="{{resultText}}">
+  <view>{{resultText}}</view>
+</view>

@@ -1,0 +1,12 @@
+page {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 28rpx;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16rpx;
+  margin: 20rpx;
+  padding: 20rpx;
+}

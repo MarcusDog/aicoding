@@ -1,0 +1,22 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: 9:41
+    - generic [ref=e5]: 5G 86%
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - heading "签到记录" [level=1] [ref=e8]
+      - paragraph [ref=e9]: 支持按日期筛选，展示签到时间、状态、匹配分和设备信息。
+    - generic [ref=e11]:
+      - generic [ref=e12]: 签到记录
+      - generic [ref=e13]: 2026-03-20
+    - generic [ref=e14]:
+      - generic [ref=e15]: 时间：2026-03-20 08:03:15
+      - generic [ref=e16]: 状态：normal
+      - generic [ref=e17]: 匹配分：0.967
+      - generic [ref=e18]: 设备：Apple iPhone iOS 18.1
+    - generic [ref=e19]:
+      - generic [ref=e20]: 时间：2026-03-19 08:11:42
+      - generic [ref=e21]: 状态：late
+      - generic [ref=e22]: 匹配分：0.941
+      - generic [ref=e23]: 设备：Apple iPhone iOS 18.1
+    - generic [ref=e24]: 页面依据 miniprogram/pages/records 实际结构生成

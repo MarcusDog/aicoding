@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学生端签到</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="phone">
+      <div class="status-bar">
+        <span>9:41</span>
+        <span>5G 88%</span>
+      </div>
+      <div class="screen">
+        <div class="hero">
+          <h1>人脸签到</h1>
+          <p>先读取定位，再拍照上传。后端完成规则校验、距离计算、人脸识别和写库。</p>
+        </div>
+
+        <div class="card">
+          <div class="title">人脸签到</div>
+          <div class="line">当前位置：31.23041, 121.47370</div>
+          <div class="line">规则 ID 可选</div>
+          <div class="input">留空使用默认规则</div>
+        </div>
+
+        <div class="card">
+          <div class="camera"></div>
+          <div class="button primary">拍照并签到</div>
+        </div>
+
+        <div class="card result">
+          <div class="line">签到成功：normal</div>
+          <div class="line">距离 28.4m</div>
+          <div class="line">匹配分 96.7%</div>
+          <div class="line">设备信息：Apple iPhone iOS 18.1</div>
+        </div>
+
+        <div class="footer">页面依据 miniprogram/pages/check-in 实际结构生成</div>
+      </div>
+    </div>
+  </body>
+</html>

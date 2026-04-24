@@ -1,0 +1,16 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-btn {
+  padding: 8rpx 20rpx;
+  border-radius: 8rpx;
+  border: 1rpx solid #cbd5e1;
+}
+
+.row {
+  margin: 8rpx 0;
+  color: #334155;
+}

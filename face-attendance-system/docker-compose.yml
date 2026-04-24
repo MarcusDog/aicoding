@@ -1,0 +1,71 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: attendance-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: face_attendance
+      MYSQL_USER: attendance
+      MYSQL_PASSWORD: attendance123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    command: ["--default-authentication-plugin=mysql_native_password"]
+
+  redis:
+    image: redis:7.4-alpine
+    container_name: attendance-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build: ./backend
+    container_name: attendance-backend
+    environment:
+      DATABASE_URL: mysql+pymysql://attendance:attendance123@mysql:3306/face_attendance
+      JWT_SECRET_KEY: change-me
+      SECRET_KEY: change-me-too
+      RATE_LIMIT_STORAGE_URI: redis://redis:6379/0
+      WECHAT_LOGIN_MODE: mock
+    depends_on:
+      mysql:
+        condition: service_started
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./backend/uploads:/app/uploads
+    ports:
+      - "5000:5000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://localhost:5000/health', timeout=5)"]
+      interval: 15s
+      timeout: 5s
+      retries: 12
+
+  admin-web:
+    build: ./admin-web
+    container_name: attendance-admin-web
+    depends_on:
+      - backend
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: attendance-nginx
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - admin-web
+      - backend
+    ports:
+      - "80:80"
+
+volumes:
+  mysql-data:

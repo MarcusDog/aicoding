@@ -1,0 +1,23 @@
+<view class="card">
+  <view class="head">
+    <text>签到记录</text>
+    <picker mode="date" value="{{date}}" bindchange="onDateChange">
+      <view class="date-btn">{{date || "选择日期筛选"}}</view>
+    </picker>
+  </view>
+</view>
+
+<view class="card" wx:if="{{loading}}">
+  <view>加载中...</view>
+</view>
+
+<view class="card" wx:if="{{!loading && records.length === 0}}">
+  <view>暂无记录</view>
+</view>
+
+<view class="card" wx:for="{{records}}" wx:key="id">
+  <view class="row">时间：{{item.check_time}}</view>
+  <view class="row">状态：{{item.status}}</view>
+  <view class="row">匹配分：{{item.face_match_score}}</view>
+  <view class="row">设备：{{item.device_info || "-"}}</view>
+</view>

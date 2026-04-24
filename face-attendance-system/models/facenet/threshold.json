@@ -1,0 +1,6 @@
+{
+  "recommended_threshold": 0.2,
+  "pair_accuracy": 0.2943,
+  "genuine_pairs": 1900,
+  "impostor_pairs": 5000
+}

@@ -1,0 +1,17 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: 9:41
+    - generic [ref=e5]: 5G 90%
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - heading "人脸注册" [level=1] [ref=e8]
+      - paragraph [ref=e9]: 调用前置摄像头完成采集，上传后由后端做人脸检测、特征提取和模板保存。
+    - generic [ref=e10]:
+      - generic [ref=e11]: 请保持正面、光线充足，拍摄时摘下口罩。
+      - generic [ref=e12]: 前置摄像头预览区域
+      - generic [ref=e13]: 拍照并注册
+    - generic [ref=e14]:
+      - generic [ref=e15]: 注册结果：注册成功
+      - generic [ref=e16]: 质量评分：85.89
+      - generic [ref=e17]: 后端已更新 face_data 和 user.is_face_registered
+    - generic [ref=e18]: 页面依据 miniprogram/pages/face-register 实际结构生成
